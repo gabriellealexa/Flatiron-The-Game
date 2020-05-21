@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="index.css">
+    <script defer src="fetch.js" type="text/javascript"></script>
+    <script defer src="index.js" type="text/javascript"></script>
+    <title>Flatiron: The Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <span id="dummy"></span>
+    <div id="player-info">
+        <table id="action-menu">
+            <tr>
+            <td id="cells"><img src="icons/skills.png" id="skills-icon"><br><span id="skills-word">SKILLS</span></td> 
+            <td id="cells"><img src="icons/backpack.png" id="bag-icon"><br><span id="bag-word">BAG</span></td> 
+            <td id="cells"> <img src="icons/attr.png" id="attr-icon"><br><span id="att-word">ATTRIBUTES</span></td>
+            </tr>
+        </table>
+        <div id="action-toggle-menu">
+            <div id="close-window">
+                <img src="icons/closewindow.png" id = "close-window-con" width="25px"> 
+            </div>
+           
+                <div id="print-skills">
+                <table id="list-them">
+                    <tr>
+                        <td><font color="#b75166">HTML</font></td>
+                    </tr>
+                    <tr>
+                        <td><font color="#b75166">CSS</font></td>
+                    </tr>
+                    <tr>
+                        <td><font color="#b75166">Ruby</font></td>
+                    </tr>
+                    <tr>
+                        <td id="skill1">Object-Oriented Programming</td>
+                    </tr>
+                    <tr>
+                        <td id="skill2">Active Record</td>
+                    </tr>
+                    <tr>
+                        <td id="skill3">Sinatra</td>
+                    </tr>
+                    <tr>
+                        <td id="skill4">Rails</td>
+                    </tr>
+                    <tr>
+                        <td id="skill5">Javascript</td>
+                    </tr>
+                    <tr>
+                        <td id="skill6">React</td>
+                    </tr>
+                </table>
+                </div>
+
+                <div id="print-items">
+                    <table id="list-them">
+                        <tr>
+                            <td id="item1">[ Laptop ]</td>
+                        </tr>
+                        <tr>
+                            <td id="item2">[ item slot ]</td>
+                        </tr>
+                        <tr>
+                            <td id="item3">[ item slot ]</td>
+                        </tr>
+                        <tr>
+                            <td id="item4">[ item slot ]</td>
+                        </tr>
+                        <tr>
+                            <td id="item5">[ item slot ]</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="print-attributes">
+                    <table id="list-them">
+                        <tr>
+                            <td id="health">health: healthy</td>
+                        </tr>
+                        <tr>
+                            <td id="mood">mood: happy</td>
+                        </tr>
+                        <tr>
+                            <td id="stress">stress: <span id="stress-level">1</span></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+
+            </div>
+        </div>
+   
+
+    <div id="main"> <!--- begin main div-->
+
+  <div id="welcome">
+    <img src="characters/instructors.png" width="150px"><br>
+    <img src="characters/flatironschool.png"><br><br>
+    <button id="start-game">Start Game</button>
+  </div>
+
+    </div> <!--- end main div-->
+
+    <div id="unseen">
+        <audio id="audio" src="sounds/click.wav"></audio>
+        <button onclick="clickSound">click sound success</button>
+    
+
+
+              <div id="gameplay">
+
+                <center><img src="characters/flatironschool.png" width="200px"></center>
+
+            <div id = "leftbox">
+                    <p class = "name" id="player-name">Player Name</p>
+                    <img src="characters/gabby.png" alt="Player Image" id="player-img">
+                    <div id="desc1">Software Engineering Student<br></div>
+                </div>
+            
+                <div id = "rightbox">        
+                    <p class = "name" id="other-name">Event/Boss</p>
+                    <img src="characters/placeholder.png" alt="Boss Image" id="other-img">
+                    <div id="desc">Description<br></div>
+                </div>
+
+                    <p id="spacer"> <img src="icons/ruby.png" width="5px"></p>
+                    <p id="event-string">
+                        This is where the event string/story will go. This is where the event string/story will go. This is where the event string/story will go. This is where the event string/story will go.
+                    </p>
+                    <ul class = "choices-ul">
+                        <li>Choice 1</li>
+                        <li>Choice 2</li>
+                        <li>Choice 3</li>
+                        <li>Choice 4</li>
+                    </ul>
+                </div>
+                </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+</body>
+</html>
