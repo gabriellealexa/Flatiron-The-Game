@@ -1,5 +1,5 @@
 # Flatiron-The-Game
-Developed with Gary Lau. Flatiron School, Mod 3, Final Project - A point-and-click adventure with a RoR backend and JS front-end.
+A point-and-click adventure with a RoR backend and JS front-end. The story follows my experience at Flatiron School during coronavirus social distancing. Developed with Gary Lau.
 
 # Backend
 A Ruby on Rails API containing the skills, events, items, and non-player characters inside of the game. More 'events' need to be created to complete the story.
