@@ -1,24 +1,5 @@
-# README
+# Flatiron-The-Game
+Developed with Gary Lau, this is a point-and-click adventure featuring a Rails backend and JS front-end. The story follows our experience at Flatiron School: Brooklyn during the coronavirus pandemic. It features actual Flatiron instructors, coaches, and students.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Backend
+A Ruby on Rails API containing the skills, events, items, and non-player characters inside of the game. More 'events' need to be created to complete the story.
