@@ -1,6 +1,4 @@
 class Event < ApplicationRecord
     belongs_to :npc
-    belongs_to :mod 
-
-
+    has_many :choices
 end
