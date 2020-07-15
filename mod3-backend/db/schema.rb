@@ -13,8 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_05_05_003727) do
 
   create_table "choices", force: :cascade do |t|
-    t.string "content"
-    t.string "description"
+    t.string "option"
     t.integer "event_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -23,7 +22,6 @@ ActiveRecord::Schema.define(version: 2020_05_05_003727) do
   create_table "events", force: :cascade do |t|
     t.string "evt"
     t.string "content"
-    t.integer "mod_id"
     t.integer "npc_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -31,8 +29,7 @@ ActiveRecord::Schema.define(version: 2020_05_05_003727) do
 
   create_table "items", force: :cascade do |t|
     t.string "name"
-    t.string "description"
-    t.string "img"
+    t.string "image"
     t.integer "player_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -51,7 +48,8 @@ ActiveRecord::Schema.define(version: 2020_05_05_003727) do
   create_table "npcs", force: :cascade do |t|
     t.string "name"
     t.string "nickname"
-    t.string "title"
+    t.string "description"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -69,7 +67,7 @@ ActiveRecord::Schema.define(version: 2020_05_05_003727) do
   create_table "skills", force: :cascade do |t|
     t.string "name"
     t.integer "player_id"
-    t.integer "mod_id"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
